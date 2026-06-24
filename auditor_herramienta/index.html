@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="html-title">Auditor de Cumplimiento Ley 21.719 - Chile</title>
+  <meta name="description" content="Herramienta de autodiagnóstico de cumplimiento con la Ley N° 21.719 de Protección de Datos Personales para empresas de desarrollo de software.">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="app-header no-print">
+    <div class="header-container">
+      <div class="logo-area">
+        <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          <path d="m9 12 2 2 4-4"/>
+        </svg>
+        <div>
+          <h1 class="logo-title">Ley 21.719</h1>
+          <p class="logo-subtitle" data-i18n="app-subtitle">Auditor de Cumplimiento TI</p>
+        </div>
+      </div>
+      
+      <div class="header-actions">
+        <!-- Language Selector -->
+        <div class="lang-selector">
+          <button id="btn-lang-es" class="btn-lang active" onclick="setLanguage('es')">ES</button>
+          <button id="btn-lang-en" class="btn-lang" onclick="setLanguage('en')">EN</button>
+        </div>
+        <!-- Reset Button -->
+        <button id="btn-reset-top" class="btn-secondary" onclick="resetAudit()" data-i18n="reset-audit">Reiniciar</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="app-container">
+    
+    <!-- Sidebar Progress (Desktop only) -->
+    <aside class="app-sidebar no-print">
+      <div class="sidebar-sticky">
+        <h3 class="sidebar-title" data-i18n="dimensions">Dimensiones</h3>
+        <ul id="sidebar-menu" class="sidebar-menu">
+          <!-- Dynamically populated -->
+        </ul>
+        
+        <div class="progress-box">
+          <div class="progress-text-container">
+            <span class="progress-title" data-i18n="completion">Progreso</span>
+            <span id="progress-pct">0%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div id="progress-bar-fill" class="progress-bar-fill" style="width: 0%"></div>
+          </div>
+          <p class="progress-stat" id="progress-questions-stat">0 de 24 preguntas</p>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <section class="app-content">
+      
+      <!-- wizard view (questions) -->
+      <div id="wizard-view" class="card active no-print">
+        <div class="card-header">
+          <div class="dimension-badge" id="current-dim-badge">Dimensión 1</div>
+          <h2 id="current-dim-title" class="dim-title">Licitud y Consentimiento</h2>
+          <p id="current-dim-desc" class="dim-desc">Verifica las bases de licitud del sistema.</p>
+        </div>
+        
+        <!-- Questions container -->
+        <div id="questions-container" class="questions-list">
+          <!-- Dynamically populated -->
+        </div>
+
+        <!-- Wizard Navigation -->
+        <div class="wizard-nav">
+          <button id="btn-prev" class="btn-secondary" onclick="prevDimension()" disabled data-i18n="nav-prev">Anterior</button>
+          <button id="btn-next" class="btn-primary" onclick="nextDimension()" data-i18n="nav-next">Siguiente</button>
+        </div>
+      </div>
+
+      <!-- Report view (results) -->
+      <div id="report-view" class="card report-card">
+        
+        <!-- Print Header -->
+        <div class="print-header only-print">
+          <h2>INFORME METICULOSO DE AUDITORÍA DE CUMPLIMIENTO</h2>
+          <h3>Ley N° 21.719 - Protección de Datos Personales en Chile</h3>
+          <p id="print-date">Fecha de Auditoría: </p>
+        </div>
+
+        <div class="card-header no-print">
+          <h2 data-i18n="report-title" class="report-main-title">Informe Meticuloso de Cumplimiento</h2>
+          <p data-i18n="report-subtitle">Resultados del diagnóstico del sistema de software frente a la ley.</p>
+        </div>
+
+        <!-- Results Summary Dashboard -->
+        <div class="results-dashboard">
+          <div class="score-card">
+            <div class="score-radial">
+              <span id="score-number">0%</span>
+              <span data-i18n="compliance-pct" class="score-label">Cumplimiento</span>
+            </div>
+            <div class="score-details">
+              <h3 id="risk-level-title">Riesgo Bajo</h3>
+              <p id="risk-level-desc">El sistema demuestra controles sólidos y una madurez de cumplimiento aceptable.</p>
+            </div>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-val text-success" id="stat-complies">0</div>
+              <div class="stat-lbl" data-i18n="stat-lbl-complies">Cumple</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-val text-warning" id="stat-partial">0</div>
+              <div class="stat-lbl" data-i18n="stat-lbl-partial">Parcial</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-val text-danger" id="stat-fails">0</div>
+              <div class="stat-lbl" data-i18n="stat-lbl-fails">No Cumple</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab Selector -->
+        <div class="tabs-container no-print">
+          <button id="tab-summary" class="tab-btn active" onclick="switchTab('summary')" data-i18n="tab-summary">Resumen por Dimensión</button>
+          <button id="tab-actions" class="tab-btn" onclick="switchTab('actions')" data-i18n="tab-actions">Acciones Técnicas (Código)</button>
+          <button id="tab-governance" class="tab-btn" onclick="switchTab('governance')" data-i18n="tab-governance">Gobernanza y Ley</button>
+        </div>
+
+        <!-- Tab 1 Content: Summary by dimension -->
+        <div id="tab-content-summary" class="tab-content active">
+          <h3 data-i18n="breakdown-title" class="section-title">Análisis de Cumplimiento por Dimensión</h3>
+          <div id="dimensions-breakdown-list" class="breakdown-list">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <!-- Tab 2 Content: Technical recommendations for coding/infra -->
+        <div id="tab-content-actions" class="tab-content">
+          <h3 data-i18n="tech-actions-title" class="section-title text-danger">Recomendaciones de Desarrollo e Infraestructura</h3>
+          <p data-i18n="tech-actions-desc" class="section-desc">Acciones concretas a implementar por el equipo de software en base de datos, backend y arquitectura.</p>
+          <div id="tech-actions-list" class="actions-list">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <!-- Tab 3 Content: Governance & Legal aspects -->
+        <div id="tab-content-governance" class="tab-content">
+          <h3 data-i18n="gov-title" class="section-title text-primary">Acciones Organizativas y Gobernanza de Datos</h3>
+          <p data-i18n="gov-desc" class="section-desc">Modelos de prevención de infracciones, DPO y políticas contractuales exigidas.</p>
+          <div id="gov-actions-list" class="actions-list">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <!-- Action Panel (Bottom of report) -->
+        <div class="report-footer-actions no-print">
+          <button class="btn-primary btn-icon" onclick="window.print()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 6 2 18 2 18 9"/>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+              <rect x="6" y="14" width="12" height="8"/>
+            </svg>
+            <span data-i18n="btn-print">Imprimir / Guardar PDF</span>
+          </button>
+          <button class="btn-secondary" onclick="editAudit()" data-i18n="btn-back-edit">Volver a Editar</button>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Modal for Code Snippets & Explanations -->
+  <div id="code-modal" class="modal-overlay no-print">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-header-info">
+          <span class="code-badge" id="modal-code-badge">LBC-1</span>
+          <h3 id="modal-title">Título de la Pregunta</h3>
+        </div>
+        <button class="modal-close-btn" onclick="closeModal()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="modal-body">
+        <!-- Language selector tabs -->
+        <div class="modal-tabs">
+          <button id="btn-tab-python" class="modal-tab active" onclick="switchModalLanguage('python')">Python</button>
+          <button id="btn-tab-js" class="modal-tab" onclick="switchModalLanguage('js')">JavaScript</button>
+          <button id="btn-tab-php" class="modal-tab" onclick="switchModalLanguage('php')">PHP</button>
+          <button id="btn-tab-go" class="modal-tab" onclick="switchModalLanguage('go')">Go</button>
+        </div>
+        
+        <!-- Code editor visualizer -->
+        <div class="code-editor-container">
+          <div class="code-editor-header">
+            <div class="editor-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="editor-filename" id="editor-filename">code.py</span>
+            <button class="btn-copy-code" onclick="copyCodeToClipboard()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+              </svg>
+              <span id="btn-copy-text" data-i18n="copy-btn-txt">Copiar Código</span>
+            </button>
+          </div>
+          <pre class="code-pre"><code id="code-content-area" class="code-highlight"></code></pre>
+        </div>
+        
+        <!-- Explanation text -->
+        <div class="modal-explanation-box">
+          <h4 data-i18n="modal-exp-title">Guía de Refactorización</h4>
+          <p id="modal-explanation-text">Explicación del punto...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Load Scripts -->
+  <script src="audit_framework.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
