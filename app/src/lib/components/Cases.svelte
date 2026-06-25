@@ -1,6 +1,5 @@
 <script>
   import { casesData } from '../data/lawData.js';
-  import FlowChart from './FlowChart.svelte';
   import MarkdownRenderer from './MarkdownRenderer.svelte';
 
   let { currentLanguage = 'es' } = $props();
@@ -69,11 +68,6 @@
         : 'Explore data structures, critical risks, and technical actions applied in 15 real industries.'}
     </p>
   </div>
-
-  <!-- D3 Flowchart: Algorithmic Decision Making -->
-  <section class="rounded-3xl bg-slate-900/60 border border-slate-800 p-6 md:p-8">
-    <FlowChart {currentLanguage} />
-  </section>
 
   <div class="border-t border-slate-800"></div>
 
