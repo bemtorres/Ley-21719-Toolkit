@@ -7,6 +7,8 @@
   import Auditor from './lib/components/Auditor.svelte';
   import { getSectionSchema, getBreadcrumbSchema } from './lib/seo/structuredData.js';
 
+  import { onMount } from 'svelte';
+
   // Global reactive state shared across all sections
   let currentSection = $state('overview');
   let currentLanguage = $state('es');
@@ -34,6 +36,30 @@
       titleEn: 'IT Compliance Auditor Tool'
     }
   };
+
+  // Sync state with URL hash
+  function updateSectionFromHash() {
+    const hash = window.location.hash.replace('#', '');
+    if (sectionMeta[hash]) {
+      currentSection = hash;
+    } else {
+      currentSection = 'overview';
+    }
+  }
+
+  onMount(() => {
+    updateSectionFromHash();
+    window.addEventListener('hashchange', updateSectionFromHash);
+    return () => {
+      window.removeEventListener('hashchange', updateSectionFromHash);
+    };
+  });
+
+  $effect(() => {
+    if (window.location.hash.replace('#', '') !== currentSection) {
+      window.location.hash = currentSection;
+    }
+  });
 
   // Dynamic JSON-LD schemas per section
   const sectionSchemas = $derived(getSectionSchema(currentSection));
