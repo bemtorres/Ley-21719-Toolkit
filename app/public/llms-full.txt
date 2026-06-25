@@ -1,0 +1,359 @@
+# LEY N° 21.719: Regulación del Tratamiento y Protección de Datos Personales en Chile
+# Fuente: https://ley21719.cl
+# Última actualización: 2026-06-24
+
+---
+
+## Resumen Ejecutivo
+
+La Ley N° 21.719 fue publicada en el Diario Oficial el 13 de diciembre de 2024 y entrará en plena vigencia el 1 de diciembre de 2026. Esta normativa moderniza la antigua Ley N° 19.628 (vigente desde 1999) y eleva los estándares locales al nivel del Reglamento General de Protección de Datos (RGPD) de la Unión Europea.
+
+### Datos Clave
+- Publicación: 13 de diciembre de 2024
+- Vigencia plena: 1 de diciembre de 2026
+- Autoridad de control: Agencia de Protección de Datos Personales (APDP)
+- Multa máxima gravísima: 20.000 UTM o 4% de ingresos anuales
+- Plazo de notificación de brechas: 72 horas a la APDP
+- Derechos de los titulares: ARCO-P
+
+---
+
+## Los 7 Principios Fundamentales del Tratamiento de Datos (Artículo 3°)
+
+1. **Licitud y Lealtad:** Los datos deben tratarse con apego a la ley y de manera justa, sin engaños, manipulación ni fines abusivos. Todo tratamiento requiere una base legal válida.
+
+2. **Finalidad:** Los datos deben ser recolectados para fines específicos, explícitos y legítimos. Queda prohibido su uso posterior para fines incompatibles.
+
+3. **Proporcionalidad:** Solo se deben recopilar y tratar los datos que sean estrictamente necesarios, pertinentes y adecuados para la finalidad declarada.
+
+4. **Calidad y Exactitud:** Los datos deben ser exactos, completos y estar actualizados. Deben eliminarse o anonimizarse tan pronto dejen de ser necesarios.
+
+5. **Responsabilidad Proactiva:** El responsable del tratamiento no solo debe cumplir la ley, sino también estar en condiciones de demostrar y acreditar dicho cumplimiento.
+
+6. **Seguridad:** Obligatorio adoptar medidas técnicas y organizativas apropiadas para resguardar la confidencialidad, integridad y disponibilidad.
+
+7. **Transparencia:** Se debe garantizar al titular información clara, accesible y oportuna sobre quién trata sus datos y cómo ejercer sus derechos.
+
+---
+
+## Derechos ARCO-P de los Titulares
+
+La ley empodera a los ciudadanos otorgándoles el control de su información personal a través de 5 derechos fundamentales:
+
+- **A - Acceso:** Derecho a saber si se están tratando sus datos, con qué finalidad, los destinatarios de los mismos y el período de conservación.
+
+- **R - Rectificación:** Solicitar la corrección de datos personales que sean inexactos, desactualizados, incompletos o erróneos.
+
+- **C - Cancelación / Supresión:** Exigir la eliminación de datos cuando hayan dejado de ser necesarios, el tratamiento sea ilícito, o se haya revocado el consentimiento.
+
+- **O - Oposición:** Oponerse al tratamiento por motivos fundados y legítimos, o cuando el tratamiento tenga por objeto mercadotecnia directa.
+
+- **P - Portabilidad:** Derecho a recibir sus datos en un formato estructurado y legible, y a transmitirlos a otro responsable sin impedimentos.
+
+---
+
+## Régimen de Infracciones y Multas
+
+| Gravedad | Sanción / Multa Máxima | Cálculo Alternativo (Grandes Empresas) |
+|----------|----------------------|----------------------------------------|
+| **Leve** | Amonestación escrita o hasta 5.000 UTM | No aplica alternativo |
+| **Grave** | Multa de hasta 10.000 UTM | Hasta el 2% de los ingresos anuales |
+| **Gravísima** | Multa de hasta 20.000 UTM | Hasta el 4% de los ingresos anuales |
+
+**Advertencia por reincidencia:** En caso de reincidencia en infracciones gravísimas, la multa máxima puede incrementarse hasta tres veces (60.000 UTM) o suspenderse temporalmente las actividades de tratamiento de datos de la organización.
+
+---
+
+## Ecosistema de Relaciones de la Ley
+
+Los actores clave del nuevo ecosistema de protección de datos son:
+
+1. **Titular de los Datos (Ciudadano/Usuario):** Dueño de la información personal. Ejerce derechos ARCO-P y entrega consentimiento legal.
+
+2. **Responsable del Tratamiento (Empresa/Institución):** Entidad que decide los fines y medios del tratamiento de los datos. Debe demostrar cumplimiento y nombrar un DPD.
+
+3. **Delegado de Protección de Datos (DPD/DPO):** Supervisa el cumplimiento técnico interno con autonomía y actúa como enlace con la APDP y los titulares.
+
+4. **Agencia de Protección de Datos (APDP):** Organismo público fiscalizador. Dicta directrices, resuelve denuncias y tiene facultad para sancionar y multar.
+
+### Flujos de Relación:
+1. Titular → Responsable: Ejerce derechos ARCO-P y entrega consentimiento
+2. Responsable → DPD: Nombra, dota de recursos y otorga independencia
+3. DPD → Responsable: Asesora y supervisa cumplimiento interno
+4. Titular → APDP: Interpone reclamos y denuncias
+5. APDP → Responsable: Fiscaliza, sanciona y dicta directrices
+6. DPD → APDP: Actúa como canal de enlace e interlocutor
+
+---
+
+## Plan Estratégico de Adecuación
+
+### Diciembre 2024 — Publicación de la Ley
+Publicada en el Diario Oficial el 13 de diciembre de 2024, iniciando el período de vacancia legal.
+
+### 2025 (H1) — Fase de Diagnóstico
+Mapeo de inventario de datos personales, flujos, y análisis de brechas técnicas en las organizaciones.
+
+### 2025 (H2) - 2026 — Diseño e Implementación
+Creación de políticas de privacidad, ajuste de contratos CCT, y evaluaciones de impacto EIPD en sistemas críticos.
+
+### Mediados 2026 — Modelo de Prevención y DPD
+Nombramiento del Delegado de Protección de Datos (DPD) e implementación del Modelo de Prevención de Infracciones (MPI).
+
+### 1 Diciembre 2026 — Entrada en Vigencia Plena
+Entrada en vigencia total de la ley. La Agencia (APDP) iniciará fiscalizaciones y podrá aplicar multas millonarias.
+
+---
+
+## Casos Prácticos por Sector (15 Sectores)
+
+### 1. Sistema de Gestión Escolar (K-12)
+- Datos: Matrícula, fichas médicas, notas, pagos
+- Datos sensibles: Alergias, diagnósticos psicopedagógicos (menores de 14 años)
+- Base legal: Consentimiento del apoderado, obligación legal educativa
+
+### 2. Sistema de Hospital y Laboratorio Clínico
+- Datos: Fichas clínicas, resultados de laboratorio, historial de consultas
+- Datos sensibles: Diagnósticos, tratamientos, resultados genéticos
+- Base legal: Obligación legal (Ley 20.584), consentimiento explícito
+
+### 3. Red Social Web y Móvil
+- Datos: Perfiles, publicaciones, mensajes, geolocalización, cookies
+- Base legal: Ejecución de contrato, consentimiento para datos sensibles
+
+### 4. Plataforma de Comercio Electrónico (E-commerce)
+- Datos: Cuentas, pasarelas de pagos, envíos, marketing
+- Base legal: Ejecución de contrato, consentimiento para marketing
+
+### 5. Sistema Financiero y Plataforma Fintech
+- Datos: KYC biométrico, evaluación crediticia, transacciones
+- Base legal: Obligación legal (UAF/CMF), ejecución de contrato
+
+### 6. Sistema de Recursos Humanos y Reclutamiento (ATS)
+- Datos: CV, fichas de empleados, evaluaciones, seguridad ocupacional
+- Base legal: Relación contractual/precontractual
+
+### 7. Aplicaciones de Transporte y Delivery
+- Datos: Geolocalización GPS, historial de viajes, perfil del conductor
+- Base legal: Ejecución de contrato, consentimiento granular
+
+### 8. Dispositivos Vestibles e IoT
+- Datos: Frecuencia cardíaca, patrones de sueño, geolocalización
+- Datos sensibles: Datos de salud del wearable
+- Base legal: Consentimiento explícito e informado
+
+### 9. Sistema de Gestión Municipal y Sector Público
+- Datos: Registros civiles, permisos, beneficios sociales, videovigilancia
+- Base legal: Obligación legal, interés público
+
+### 10. Compañía de Seguros y Corredores
+- Datos: Cotizaciones, declaraciones de salud, siniestros, underwriting
+- Base legal: Ejecución de contrato, obligación legal
+
+### 11. Empresa de Telecomunicaciones
+- Datos: CDR, geolocalización de torres, navegación, perfil de consumo
+- Base legal: Ejecución de contrato, obligación legal
+
+### 12. Plataforma de Publicidad y Marketing Digital (AdTech)
+- Datos: Cookies, RTB, DMP, píxeles de conversión
+- Base legal: Consentimiento explícito (opt-in)
+
+### 13. Plataforma de Gaming, Casinos Online y eSports
+- Datos: KYC, geolocalización, historial de apuestas, chat
+- Base legal: Obligación legal, consentimiento
+
+### 14. Plataforma de Bienes Raíces y Proptech
+- Datos: Solicitudes de arriendo, contratos, videovigilancia
+- Base legal: Ejecución de contrato
+
+### 15. Fundaciones, ONGs y Organizaciones Sociales
+- Datos: Donantes, beneficiarios, voluntarios, investigación
+- Base legal: Consentimiento, obligación legal
+
+---
+
+## Brechas de Seguridad Reales en Chile
+
+### Caso 1: Caja Los Andes (2024)
+- **Fecha:** 4 de julio de 2024
+- **Impacto:** ~10 millones de personas afectadas
+- **Datos:** Nombres, RUT, remuneraciones, créditos, datos de salud
+- **Causa:** Base Apache Cassandra sin autenticación expuesta a internet
+- **Gravedad:** Gravísima
+
+### Caso 2: Grupo GTD — Ransomware Rorschach (2023)
+- **Fecha:** 23 de octubre de 2023
+- **Impacto:** 3.000+ clientes corporativos, incluyendo Fonasa, SII, Correos de Chile
+- **Causa:** Ransomware Rorschach (BabLock) en infraestructura IaaS
+- **Gravedad:** Gravísima
+
+### Caso 3: IFX Networks — Ransomware y Mercado Público (2023)
+- **Fecha:** 12 de septiembre de 2023
+- **Impacto:** Parálisis de Mercado Público (ChileCompra) por 8 días
+- **Causa:** Ransomware RansomHouse en hipervisores VMware ESXi
+- **Gravedad:** Gravísima
+
+### Caso 4: Poder Judicial — Ransomware LockBit (2022)
+- **Fecha:** 26 de septiembre de 2022
+- **Impacto:** 150 computadores cifrados, audiencias suspendidas
+- **Causa:** Sistemas obsoletos (Windows 7) sin parches
+- **Gravedad:** Grave
+
+### Caso 5: BancoEstado — Ransomware Sodinokibi/REvil (2020)
+- **Fecha:** 5 de septiembre de 2020
+- **Impacto:** 12.000 estaciones de trabajo cifradas, 410 sucursales cerradas
+- **Causa:** Malware Sodinokibi/REvil
+- **Gravedad:** Gravísima
+
+### Caso 6: Clínica Dávila — Ransomware y Fichas Médicas (2025-2026)
+- **Fecha:** Diciembre 2025 - Marzo 2026
+- **Impacto:** 250 GB de datos exfiltrados, publicados en dark web
+- **Datos:** Fichas clínicas, exámenes de VIH, datos de salud mental
+- **Causa:** Grupos Devman y LockBit 5.0
+- **Gravedad:** Gravísima
+
+---
+
+## Brechas Internacionales de Referencia
+
+### Meta (Facebook) — €1.200M (2023)
+Transferencia de datos europeos a EE.UU. sin salvaguardas adecuadas tras Schrems II.
+
+### TikTok — €530M (2025)
+Transferencia de datos de menores europeos a China, configuración inadecuada de cuentas.
+
+### Clearview AI — €100M+ (2021-2025)
+Base de datos biométrica de 30.000+ millones de imágenes scrapeadas sin consentimiento.
+
+### Uber — €290M (2024)
+Transferencia de datos de conductores europeos a EE.UU. sin SCCs.
+
+### LinkedIn — €310M (2024)
+Publicidad conductual sin base legal válida (interés legítimo rechazado).
+
+### Amazon — €746M (2021, anulada en 2026)
+Cookies de publicidad sin consentimiento válido.
+
+### Meta — €251M (2024)
+29 millones de contraseñas almacenadas en texto plano.
+
+### SHEIN — €150M (2025)
+Cookies de rastreo sin consentimiento, dark patterns en banner.
+
+---
+
+## Modelo de Prevención de Infracciones (MPI)
+
+El MPI es un programa de compliance voluntario que demuestra que la organización ha implementado medidas para prevenir infracciones de protección de datos.
+
+### Los 7 Elementos del MPI (Art. 49):
+
+1. **Designación del DPD:** Nombrar formalmente un Delegado de Protección de Datos con autonomía y recursos.
+
+2. **Identificación de la Información Tratada:** Registro de Actividades de Tratamiento (RAT/RoPA).
+
+3. **Matriz de Riesgo de Privacidad:** Evaluación de riesgos de cada tratamiento.
+
+4. **Protocolos y Ejercicio ARCO-P:** Procedimientos para atender solicitudes de titulares.
+
+5. **Canal de Denuncia Interna:** Mecanismo confidencial para reportar infracciones.
+
+6. **Capacitación Continua al Staff:** Programa de formación en protección de datos.
+
+7. **Supervisión y Auditoría Anual:** Revisión periódica del cumplimiento.
+
+### Beneficios de la Certificación MPI:
+- Funciona como atenuante muy calificada ante sanciones
+- Vigencia: 3 años, renovable
+- Certificada exclusivamente por la APDP
+- Registro público en el Registro Nacional de Sanciones y Cumplimiento
+
+---
+
+## Guía de Respuesta a Incidentes de Ciberseguridad
+
+### Protocolo de Respuesta Paso a Paso:
+
+1. **0-4 Horas: Contención e Identificación**
+   - Aislar sistemas afectados
+   - Activar Comité de Crisis
+   - Iniciar Bitácora Técnica
+
+2. **4-24 Horas: Evaluación del Impacto**
+   - Determinar datos comprometidos (generales, sensibles)
+   - Evaluar volumen de titulares afectados
+   - Identificar período de exposición
+
+3. **24-72 Horas: Notificación de la Brecha**
+   - Notificación obligatoria a la APDP
+   - Notificación a los titulares afectados
+   - Documentación del incidente
+
+4. **Día 2-7: Erradicación y Recuperación**
+   - Limpieza de malware
+   - Restaurar backups inmutables
+   - Restablecer servicios
+
+5. **Día 7+: Post-Incidente y Cierre Legal**
+   - Análisis de causa raíz
+   - Implementar medidas correctivas
+   - Cierre documental
+
+### Contactos de Emergencia en Chile:
+
+- **CSIRT Nacional / ANCI:** 1510 | ayuda@anci.gob.cl | csirt.gob.cl
+- **PDI Cibercrimen:** +56 2 2708 0658 | guardia@cibercrimen.cl
+- **APDP:** contacto@apdp.gob.cl | apdp.gob.cl
+- **SERNAC:** 800 700 100 | sernac.cl
+- **CMF (Financiero):** incidentes@cmfchile.cl | cmfchile.cl
+
+---
+
+## Auditor de Cumplimiento TI — 24 Controles
+
+El auditor interactivo evalúa 24 controles técnicos organizados en 6 dimensiones:
+
+### Dimensión 1: Licitud y Consentimiento (LBC)
+- LBC-1: Casillas de consentimiento desmarcadas por defecto
+- LBC-2: Registro de bases legales por cada tratamiento
+- LBC-3: Mecanismo de revocación de consentimiento
+- LBC-4: Consentimiento explícito para datos sensibles
+
+### Dimensión 2: Derechos ARCO-P (ARC)
+- ARC-1: Endpoint para solicitud de acceso a datos
+- ARC-2: Endpoint para rectificación de datos
+- ARC-3: Endpoint para supresión de datos
+- ARC-4: Endpoint para portabilidad de datos
+
+### Dimensión 3: Seguridad Técnica (SEC)
+- SEC-1: Cifrado en reposo (AES-256)
+- SEC-2: Cifrado en tránsito (TLS 1.3)
+- SEC-3: Autenticación multifactor (MFA)
+- SEC-4: Logs de auditoría inmutables
+
+### Dimensión 4: Gestión de Datos (DAT)
+- DAT-1: Registro de Actividades de Tratamiento (RAT)
+- DAT-2: Política de retención de datos
+- DAT-3: Anonimización/pseudonimización
+- DAT-4: Evaluación de Impacto (EIPD)
+
+### Dimensión 5: Seguridad de la Aplicación (APP)
+- APP-1: Protección contra inyección SQL
+- APP-2: Validación de inputs
+- APP-3: Gestión segura de sesiones
+- APP-4: Hash de contraseñas (bcrypt/argon2)
+
+### Dimensión 6: Gobernanza y Cumplimiento (GOV)
+- GOV-1: Nombramiento formal del DPD
+- GOV-2: Política de privacidad publicada
+- GOV-3: Cláusulas DPA con encargados
+- GOV-4: Plan de respuesta a incidentes
+
+---
+
+## Fuente y Derechos
+
+Este contenido es de referencia técnica y jurídica. Para el texto oficial de la Ley N° 21.719, consulte el Diario Oficial de Chile.
+
+Portal: https://ley21719.cl
+© 2024-2026 Ecosistema de Cumplimiento Ley 21.719 Chile

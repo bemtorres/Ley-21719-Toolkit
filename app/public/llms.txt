@@ -1,0 +1,35 @@
+# Ley 21.719 Chile — Ecosistema de Protección de Datos Personales
+
+> Portal completo de cumplimiento de la Ley N° 21.719 de Protección de Datos Personales de Chile.
+
+## Sobre este sitio
+
+Este sitio es un ecosistema interactivo de referencia técnica y legal para la Ley N° 21.719 de Protección de Datos Personales de Chile, publicada el 13 de diciembre de 2024 y con vigencia plena desde el 1 de diciembre de 2026. Moderniza la antigua Ley N° 19.628 (1999) y alinea los estándares chilenos con el RGPD europeo.
+
+## Contenido disponible
+
+### Secciones principales
+
+- / — Información general de la ley, 7 principios fundamentales, derechos ARCO-P, régimen de multas y plan de adecuación
+- #cases — 15 casos prácticos de cumplimiento por sector: educación, salud, redes sociales, e-commerce, finanzas, gaming, sector público, inmobiliario, IoT, ONGs, recursos humanos, seguros, telecomunicaciones, adtech, transporte/delivery
+- #vulnerabilities — Brechas de seguridad reales en Chile e internacionalmente: Caja Los Andes, GTD, IFX Networks, Poder Judicial, BancoEstado, Clínica Dávila, Meta, TikTok, Clearview AI, Uber, LinkedIn, Amazon, SHEIN
+- #guides — Guías prácticas de certificación MPI ante la APDP, respuesta a incidentes de ciberseguridad, directorio de contactos de emergencia, plantillas de cumplimiento (acta DPD, consentimiento granular, DPA, EIPD, matriz de riesgos, notificación de brecha)
+- #auditor — Herramienta interactiva de auditoría de cumplimiento TI con 24 controles técnicos, generación de informes y ejemplos de código en Python, JavaScript, PHP y Go
+
+## Datos clave de la ley
+
+- Publicación: 13 de diciembre de 2024
+- Vigencia plena: 1 de diciembre de 2026
+- Multa máxima gravísima: 20.000 UTM o 4% de ingresos anuales
+- Plazo de notificación de brechas: 72 horas a la APDP
+- Autoridad de control: Agencia de Protección de Datos Personales (APDP)
+- Derechos de los titulares: ARCO-P (Acceso, Rectificación, Cancelación, Oposición, Portabilidad)
+- 7 principios fundamentales: Licitud, Finalidad, Proporcionalidad, Calidad, Responsabilidad Proactiva, Seguridad, Transparencia
+
+## Formato
+
+El contenido completo de la ley, casos y guías está disponible en llms-full.txt para consulta directa por modelos de lenguaje.
+
+## Contacto
+
+Portal de referencia técnica y jurídica — Ecosistema de Cumplimiento Ley 21.719 Chile

@@ -1,0 +1,285 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Outfit', sans-serif;
+  
+  --color-cl-navy: #0f172a;
+  --color-cl-blue: #1e40af;
+  --color-cl-blue-light: #3b82f6;
+  --color-cl-red: #be123c;
+  --color-cl-red-light: #f43f5e;
+  --color-cl-slate-card: #1e293b;
+  
+  --animate-fade-in: fade-in 0.3s ease-out;
+  --animate-slide-up: slide-up 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-slide-over: slide-over 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(16px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slide-over {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+/* Custom Base Styles */
+body {
+  @apply bg-slate-950 text-slate-100 min-h-screen font-sans selection:bg-rose-500/30 selection:text-rose-200 antialiased overflow-x-hidden;
+}
+
+/* Typography styles for MD contents */
+.prose-custom h1 {
+  @apply font-display text-2xl md:text-3xl font-extrabold text-white mt-6 mb-4 leading-tight border-b border-slate-800 pb-2;
+}
+
+.prose-custom h2 {
+  @apply font-display text-xl md:text-2xl font-bold text-slate-100 mt-6 mb-3 leading-snug flex items-center gap-2;
+}
+
+.prose-custom h3 {
+  @apply font-display text-lg font-semibold text-slate-200 mt-5 mb-2;
+}
+
+.prose-custom h4 {
+  @apply font-display text-base font-semibold text-slate-300 mt-4 mb-2;
+}
+
+.prose-custom p {
+  @apply text-slate-300 leading-relaxed mb-4 text-sm md:text-base;
+}
+
+.prose-custom ul {
+  @apply list-disc pl-6 mb-4 space-y-1.5 text-slate-300 text-sm md:text-base;
+}
+
+.prose-custom ol {
+  @apply list-decimal pl-6 mb-4 space-y-1.5 text-slate-300 text-sm md:text-base;
+}
+
+.prose-custom li {
+  @apply leading-relaxed;
+}
+
+.prose-custom strong {
+  @apply font-semibold text-white;
+}
+
+.prose-custom em {
+  @apply italic text-slate-200;
+}
+
+.prose-custom a, .prose-custom .link {
+  @apply text-blue-400 underline underline-offset-2 decoration-blue-400/40 hover:text-blue-300 hover:decoration-blue-300/60 transition-colors;
+}
+
+.prose-custom blockquote {
+  @apply border-l-4 border-slate-500 pl-4 py-1.5 my-4 italic text-slate-400 bg-slate-900/50 rounded-r-md;
+}
+
+.prose-custom code {
+  @apply bg-slate-900 text-rose-400 font-mono text-xs md:text-sm px-1.5 py-0.5 rounded border border-slate-800/80;
+}
+
+.prose-custom pre code {
+  background: transparent !important;
+  color: inherit !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.prose-custom pre {
+  @apply bg-slate-900/90 text-slate-200 font-mono text-xs md:text-sm p-4 rounded-xl border border-slate-800/80 overflow-x-auto my-4 shadow-inner relative max-w-full;
+}
+
+.prose-custom hr {
+  @apply border-t border-slate-800/60 my-8 w-full block;
+}
+
+.prose-custom .table-container {
+  @apply overflow-x-auto my-6 rounded-xl border border-slate-800/80 shadow-lg max-w-full;
+}
+
+.prose-custom table {
+  @apply w-full text-left border-collapse text-xs md:text-sm;
+}
+
+.prose-custom th {
+  @apply bg-slate-900 text-slate-200 font-bold p-3 border-b border-slate-800;
+}
+
+.prose-custom td {
+  @apply p-3 border-b border-slate-900 text-slate-300 bg-slate-950/20;
+}
+
+.prose-custom tr:hover td {
+  @apply bg-slate-900/30;
+}
+
+/* Alert Boxes Styling from parser output */
+.alert-box {
+  @apply border-l-4 p-4 my-5 rounded-r-xl shadow-md flex flex-col gap-1;
+}
+
+.alert-important {
+  @apply border-cl-red bg-red-950/20 text-red-200;
+}
+.alert-important .alert-title {
+  @apply font-display font-extrabold text-xs tracking-wider text-red-400 uppercase;
+}
+
+.alert-warning {
+  @apply border-amber-500 bg-amber-950/20 text-amber-200;
+}
+.alert-warning .alert-title {
+  @apply font-display font-extrabold text-xs tracking-wider text-amber-400 uppercase;
+}
+
+.alert-tip {
+  @apply border-emerald-500 bg-emerald-950/20 text-emerald-200;
+}
+.alert-tip .alert-title {
+  @apply font-display font-extrabold text-xs tracking-wider text-emerald-400 uppercase;
+}
+
+.alert-note {
+  @apply border-sky-500 bg-sky-950/20 text-sky-200;
+}
+.alert-note .alert-title {
+  @apply font-display font-extrabold text-xs tracking-wider text-sky-400 uppercase;
+}
+
+.alert-caution {
+  @apply border-rose-500 bg-rose-950/20 text-rose-200;
+}
+.alert-caution .alert-title {
+  @apply font-display font-extrabold text-xs tracking-wider text-rose-400 uppercase;
+}
+
+/* Print Styling */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+  
+  .only-print {
+    display: block !important;
+  }
+  
+  .app-container {
+    display: block !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  .app-content {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  .card, .report-card {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    color: black !important;
+  }
+
+  .results-dashboard {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 20px !important;
+    border: 1px solid #ddd !important;
+    padding: 15px !important;
+    margin-bottom: 20px !important;
+    background: #f9f9f9 !important;
+    border-radius: 8px !important;
+    page-break-inside: avoid;
+  }
+
+  .score-radial {
+    width: 100px !important;
+    height: 100px !important;
+    border: 8px solid #1e40af !important;
+    color: black !important;
+  }
+
+  .score-details h3 {
+    color: black !important;
+  }
+
+  .stat-val {
+    color: black !important;
+  }
+
+  .tab-content {
+    display: block !important;
+    opacity: 1 !important;
+  }
+
+  .tab-content:not(.active) {
+    display: block !important;
+  }
+
+  .action-card {
+    border: 1px solid #ddd !important;
+    background: #fff !important;
+    color: #333 !important;
+    page-break-inside: avoid;
+    margin-bottom: 15px !important;
+    padding: 12px !important;
+  }
+
+  .action-card-title {
+    color: black !important;
+  }
+
+  .code-badge {
+    border: 1px solid #aaa !important;
+    color: black !important;
+    background: #f0f0f0 !important;
+  }
+
+  .criticality-badge {
+    border: 1px solid #aaa !important;
+    color: black !important;
+    background: #e0e0e0 !important;
+  }
+  
+  /* Print headings */
+  h2, h3, h4 {
+    color: black !important;
+    page-break-after: avoid;
+  }
+  
+  table {
+    border: 1px solid #ddd !important;
+    width: 100% !important;
+  }
+  
+  th {
+    background-color: #f0f0f0 !important;
+    color: black !important;
+    border-bottom: 2px solid #ccc !important;
+  }
+  
+  td {
+    border-bottom: 1px solid #eee !important;
+    color: #333 !important;
+  }
+}
