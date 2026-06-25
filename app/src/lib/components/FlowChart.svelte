@@ -386,7 +386,7 @@
 <div class="space-y-6 animate-slide-up">
 
   <!-- Header -->
-  <div class="flex flex-col md:flex-row md:items-start gap-4 justify-between">
+  <div class="hidden flex flex-col md:flex-row md:items-start gap-4 justify-between">
     <div class="space-y-1">
       <div class="inline-flex items-center gap-2 rounded-full bg-violet-500/10 border border-violet-500/20 px-3 py-1 text-xs font-bold text-violet-400 uppercase tracking-wide">
         <span class="h-1.5 w-1.5 rounded-full bg-violet-400 animate-pulse"></span>
