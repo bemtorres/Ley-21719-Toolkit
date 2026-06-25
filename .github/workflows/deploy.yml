@@ -27,7 +27,7 @@ jobs:
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: 'npm'
           cache-dependency-path: app/package-lock.json
 
@@ -42,7 +42,7 @@ jobs:
           npm run build
 
       - name: Configurar GitHub Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
       - name: Subir Artefactos
         uses: actions/upload-pages-artifact@v3
